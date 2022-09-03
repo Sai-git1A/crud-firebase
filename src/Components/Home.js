@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import './Home.css';
 
 export default function Home() {
+    const navigate = useNavigate()
+
     return (
+        <>
         <header id='home-header'>
             <nav id='home-navbar' className='navbar'>
             <div className='nav-brand'>
@@ -17,5 +20,10 @@ export default function Home() {
             </div>
             </nav>
         </header>
+        <div id='body' className='main-body'>
+        <button className='btn-post' onClick={() => navigate('post')}>Post Page</button>
+        <button className='btn-read' onClick={() => navigate('read')}>Read Page</button>
+        </div>
+        </>
     )
 }
