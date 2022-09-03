@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #FFE194;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.nav-brand {
+    display: inline-block;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-title {
+    color: #74adc1;
+    display: inline;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.nav-title:hover {
+    color: #6b9db0;
+}
+
+.nav-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.nav-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #74adc1;
+    font-size: 1.5rem;
+    font-family: 'Mali', cursive;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: #6b9db0;
+}
